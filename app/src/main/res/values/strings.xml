@@ -3,4 +3,10 @@
     <string name="avalue">Enter value 1</string>
     <string name="value1">Enter value 1</string>
     <string name="value2">Enter value 2</string>
+    <string name="enter_value_1">Enter Value 1</string>
+    <string name="enter_value_2">Enter value 2</string>
+    <string name="addition">Addition</string>
+    <string name="subtraction">Subtraction</string>
+    <string name="mutliplication">Mutliplication</string>
+    <string name="division">Division</string>
 </resources>

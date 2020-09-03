@@ -14,13 +14,14 @@
         android:layout_height="62dp"
         android:ems="10"
         android:inputType="number"
+        android:hint="@string/enter_value_1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.102"
-        tools:text="Enter value 1" />
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/val2"
@@ -34,14 +35,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.243"
-        tools:text="Enter value 2" />
+        android:hint="@string/enter_value_2"
+        android:importantForAutofill="no" />
 
     <Button
         android:id="@+id/add"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:onClick="add"
-        android:text="Addition"
+        android:text="@string/addition"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.177"
@@ -53,7 +55,8 @@
         android:id="@+id/sub"
         android:layout_width="150dp"
         android:layout_height="52dp"
-        android:text="Subtraction"
+        android:text="@string/subtraction"
+        android:onClick="sub"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.272"
@@ -65,7 +68,8 @@
         android:id="@+id/mul"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:text="Mutliplication"
+        android:onClick="mul"
+        android:text="@string/mutliplication"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.176"
@@ -78,7 +82,8 @@
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_marginBottom="292dp"
-        android:text="Division"
+        android:text="@string/division"
+        android:onClick="div"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.816"
@@ -93,5 +98,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.813" />
+        app:layout_constraintVertical_bias="0.813"
+        android:textSize="100sp"
+        android:gravity="center"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
